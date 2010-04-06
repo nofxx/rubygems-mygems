@@ -45,8 +45,6 @@ class Gem::Commands::ReadCommand < Gem::Command
     unless file && File.exists?(file)
       puts "Gemfile not found.."; return
     end
-    begin
-      load file
-    end
+    eval File.read(file)
   end
 end
