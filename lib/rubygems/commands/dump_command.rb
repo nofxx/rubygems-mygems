@@ -1,20 +1,14 @@
 require 'rubygems/command'
-require 'rubygems/version_option'
 require 'rubygems/text'
 require 'rubygems/installer'
-require 'rubygems/local_remote_options'
 
 class Gem::Commands::DumpCommand < Gem::Command
   VERSION = "0.0.1"
   FNAME = "/.gemfile"
 
-
   def initialize
     super("dump", "\"Dump\" all your gems to a ~/.gemfile",
           :version => Gem::Requirement.default)
-
-    #add_version_option
-    #add_local_remote_options
   end
 
   def arguments # :nodoc:
@@ -26,7 +20,7 @@ class Gem::Commands::DumpCommand < Gem::Command
   end
 
   def usage # :nodoc:
-    "#{program_name} [FILE]"
+    "#{program_name} [PATH]"
   end
 
   def execute

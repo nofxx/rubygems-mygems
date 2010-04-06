@@ -1,24 +1,14 @@
 require 'rubygems/command'
-require 'rubygems/version_option'
 require 'rubygems/text'
 require 'rubygems/installer'
-require 'rubygems/local_remote_options'
-
-def gem(args)
-  Mygems::CLI.gem(args)
-end
 
 class Gem::Commands::ReadCommand < Gem::Command
   VERSION = "0.0.1"
   FNAME = "/.gemfile"
 
-
   def initialize
     super("read", "\"Reads\" all your gems from a ~/.gemfile",
           :version => Gem::Requirement.default)
-
-    #add_version_option
-    #add_local_remote_options
   end
 
   def arguments # :nodoc:
