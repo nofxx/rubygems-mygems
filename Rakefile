@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "mygems"
+    gem.name = "rubygems-mygems"
     gem.summary = %Q{A Bundler Gemfile for your HOME}
     gem.description = %Q{Never install a gem again..}
     gem.email = "x@nofxx.com"

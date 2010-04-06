@@ -7,7 +7,7 @@ Stupid simple gem command to never install a gem again.
 
 Install:
 
-    gem install mygems
+    gem install rubygems-mygems
 
 
 Create your .gemfile:

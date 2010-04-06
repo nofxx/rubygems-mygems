@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{mygems}
+  s.name = %q{rubygems-mygems}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -26,7 +26,6 @@ Gem::Specification.new do |s|
      "lib/rubygems/commands/dump_command.rb",
      "lib/rubygems/commands/read_command.rb",
      "lib/rubygems_plugin.rb",
-     "mygems.gemspec",
      "spec/mygems_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
