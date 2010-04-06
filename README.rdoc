@@ -1,9 +1,46 @@
-= mygems
+= My Gems
 
-Description goes here.
+Stupid simple gem command to never install a gem again.
+
+
+== Use
+
+Install:
+
+    gem install mygems
+
+
+Create your .gemfile:
+
+    gem dump
+
+
+Commit it to your dotfiles.git, share, etc..
+When you're on a new pc or a new Ruby version, or just to sync stuff:
+
+    gem read
+
+
+You may dump or read anytime, it won't duplicate your .gemfile, neither
+reinstall gems already on the system.
+
+
+== ~/.gemfile
+
+Follows bundler syntax:
+
+    gem "nokogiri"
+    gem "what_methods"
+
+But that's it, to make a only ruby 1.9 group you need:
+
+    if RUBY_VERSION > "1.9"
+       gem "somegem-19"
+    end
+
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a

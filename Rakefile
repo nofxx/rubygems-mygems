@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "mygems"
     gem.summary = %Q{A Bundler Gemfile for your HOME}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{Never install a gem again..}
     gem.email = "x@nofxx.com"
     gem.homepage = "http://github.com/nofxx/mygems"
     gem.authors = ["Marcos Piccinini"]
